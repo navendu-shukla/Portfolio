@@ -77,7 +77,7 @@ export const skillGroups: SkillGroup[] = [
   {
     category: "Leadership",
     skills: [
-      "Team Management (8+ engineers)",
+      "Team Management (15+ engineers)",
       "Hiring & Onboarding",
       "Mentorship",
       "QA Strategy",
@@ -87,15 +87,15 @@ export const skillGroups: SkillGroup[] = [
   },
   {
     category: "Automation",
-    skills: ["Playwright", "Selenium WebDriver", "Rest-Assured", "Cucumber", "Codeception", "Galen", "Geb", "Spock"],
+    skills: ["Playwright", "Selenium WebDriver", "Rest-Assured", "Codeception", "Galen", "Geb", "Spock"],
   },
   {
     category: "Languages",
-    skills: ["Java", "TypeScript", "JavaScript", "Groovy", "PHP"],
+    skills: ["Java", "TypeScript", "JavaScript", "Python", "Groovy", "PHP"],
   },
   {
     category: "Frameworks & Tools",
-    skills: ["TestNG", "Maven", "Allure Reports", "Postman", "LambdaTest", "BrowserStack", "Splunk", "Redis", "TestRail"],
+    skills: ["Cucumber", "TestNG", "Maven", "Allure Reports", "Postman", "LambdaTest", "BrowserStack", "Splunk", "Redis", "TestRail"],
   },
   {
     category: "CI/CD & Cloud",
@@ -106,11 +106,13 @@ export const skillGroups: SkillGroup[] = [
     skills: [
       "Amazon Bedrock",
       "Bedrock Guardrails",
-      "Agentic AI",
+      "Responsible AI",
+      "Agentic Test Automation",
+      "Model Context Protocol (MCP)",
       "Playwright MCP",
       "Claude Code",
-      "RAG",
-      "In-House AI Test Automation Tool",
+      "Prompt Engineering",
+      "Retrieval-Augmented Generation (RAG)",
     ],
   },
   {

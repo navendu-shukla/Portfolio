@@ -23,6 +23,27 @@ export const about = {
   ],
 };
 
+export type UpcomingItem = {
+  title: string;
+  description: string;
+  status: string;
+};
+
+export const upcoming: UpcomingItem[] = [
+  {
+    title: "Blog / Articles",
+    description:
+      "Long-form writing on QA automation strategy, AI-assisted testing, and lessons from leading automation teams.",
+    status: "Coming Soon",
+  },
+  {
+    title: "Project Case Studies",
+    description:
+      "Deep dives into the frameworks and systems behind the numbers in the Highlights section — architecture decisions, tradeoffs, and results.",
+    status: "Coming Soon",
+  },
+];
+
 export type Highlight = {
   stat: string;
   label: string;

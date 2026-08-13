@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { profile } from "@/data/portfolio";
 
 export default function Hero() {
@@ -27,18 +28,18 @@ export default function Hero() {
       </p>
 
       <div className="animate-fade-in-up flex flex-wrap items-center gap-4 pt-2" style={{ animationDelay: "380ms" }}>
-        <a
+        <Link
           href="#experience"
           className="rounded-full bg-accent px-5 py-2.5 text-sm font-medium text-background transition-all hover:-translate-y-0.5 hover:opacity-90 hover:shadow-lg hover:shadow-accent/30"
         >
           View my experience
-        </a>
-        <a
+        </Link>
+        <Link
           href="#contact"
           className="rounded-full border border-black/15 px-5 py-2.5 text-sm font-medium transition-all hover:-translate-y-0.5 hover:bg-black/5 dark:border-white/20 dark:hover:bg-white/10"
         >
           Get in touch
-        </a>
+        </Link>
       </div>
     </section>
   );

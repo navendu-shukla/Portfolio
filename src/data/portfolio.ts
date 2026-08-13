@@ -23,6 +23,18 @@ export const about = {
   ],
 };
 
+export type BlogPost = {
+  title: string;
+  slug: string;
+};
+
+export const blogPosts: BlogPost[] = [
+  {
+    title: "Executing 1000+ automation tests in less than 60 minutes",
+    slug: "executing-1000-automation-tests-in-less-than-60-minutes",
+  },
+];
+
 export type UpcomingItem = {
   title: string;
   description: string;

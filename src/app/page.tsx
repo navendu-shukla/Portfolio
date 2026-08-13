@@ -6,6 +6,7 @@ import Highlights from "@/components/Highlights";
 import Experience from "@/components/Experience";
 import Skills from "@/components/Skills";
 import Education from "@/components/Education";
+import Blog from "@/components/Blog";
 import Resume from "@/components/Resume";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
@@ -18,6 +19,7 @@ export default function Home() {
         <Hero />
         <About />
         <Upcoming />
+        <Blog />
         <Highlights />
         <Experience />
         <Skills />

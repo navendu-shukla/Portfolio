@@ -8,7 +8,7 @@ export const profile = {
   location: "Gurgaon, Haryana, India",
   email: "navshukla94@gmail.com",
   phone: "+91 9582320343",
-  resumeUrl: "/resume.pdf",
+  resumeUrl: "/NavenduShuklaResume.pdf",
   socials: {
     github: "",
     linkedin: "https://linkedin.com/in/navendu-shukla",

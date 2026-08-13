@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { profile } from "@/data/portfolio";
+import ThemeToggle from "@/components/ThemeToggle";
 
 const links = [
   { href: "#about", label: "About" },
@@ -22,28 +23,36 @@ export default function Nav() {
           {profile.name}
         </a>
 
-        <ul className="hidden gap-8 text-sm text-foreground/70 sm:flex">
-          {links.map((link) => (
-            <li key={link.href}>
-              <a href={link.href} className="transition-colors hover:text-foreground">
-                {link.label}
-              </a>
-            </li>
-          ))}
-        </ul>
+        <div className="flex items-center gap-6">
+          <ul className="hidden gap-8 text-sm text-foreground/70 sm:flex">
+            {links.map((link) => (
+              <li key={link.href}>
+                <a
+                  href={link.href}
+                  className="group relative py-1 transition-colors hover:text-foreground"
+                >
+                  {link.label}
+                  <span className="absolute inset-x-0 -bottom-0.5 h-px scale-x-0 bg-accent transition-transform duration-300 group-hover:scale-x-100" />
+                </a>
+              </li>
+            ))}
+          </ul>
 
-        <button
-          type="button"
-          aria-label="Toggle menu"
-          className="flex h-8 w-8 items-center justify-center sm:hidden"
-          onClick={() => setOpen((v) => !v)}
-        >
-          <span className="sr-only">Menu</span>
-          <div className="flex flex-col gap-1.5">
-            <span className="h-px w-5 bg-foreground" />
-            <span className="h-px w-5 bg-foreground" />
-          </div>
-        </button>
+          <ThemeToggle />
+
+          <button
+            type="button"
+            aria-label="Toggle menu"
+            className="flex h-8 w-8 items-center justify-center sm:hidden"
+            onClick={() => setOpen((v) => !v)}
+          >
+            <span className="sr-only">Menu</span>
+            <div className="flex flex-col gap-1.5">
+              <span className="h-px w-5 bg-foreground" />
+              <span className="h-px w-5 bg-foreground" />
+            </div>
+          </button>
+        </div>
       </nav>
 
       {open && (
